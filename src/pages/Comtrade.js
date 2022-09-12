@@ -12,11 +12,12 @@ function Comtrade() {
   
   const [data_pais, setDataPais] = useState([])
   const [data_ano, setDataAno] = useState([])
-  const [status, setStatus] = useState('Carregando arquivos...')
+  const [status, setStatus] = useState('')
 
 
 
   function retrieve_data(){
+    setStatus('Carregando arquivos...')
 
     data_ano.map(item_ano=>{
 
@@ -27,7 +28,6 @@ function Comtrade() {
           fetch(
           
             `https://comtrade.un.org/api/get/bulk/C/A/${item_ano.ano}/${item_pais.pais_id}/HS?token=J18NDz5Xua5U3ctLpIXLowNzVpY50CVP95f49s5Tu5N0n0j1dxxwUIEOYcou9SQzaGsiG+9ZvTEAVuIm6U+2zvTeFx6h2khpx5LxstaqB0MPxDgWbMoCdFPglgjVBycWSMDljymRfXcXLSzXvkx5Tftfg8ZWxiYBuZDtSxsZ/IU=`
-    
           
           )
           .then(response => {
@@ -43,10 +43,6 @@ function Comtrade() {
             setStatus('Download concluído!')
     
           })
-          
-      
-        
-  
 
       }
 
@@ -65,8 +61,6 @@ function Comtrade() {
   }
 
 
-  
-  
 
   return (
     <div>
@@ -74,10 +68,10 @@ function Comtrade() {
       <TableCountries result_pais={setDataPais}/>
       <TableYear result_ano={setDataAno}/>
 
-
-
       <input className='Comtrade_button' type='button' value='Buscar' onClick={() => retrieve_data()}/>
-      <p>{status}</p>
+      
+      <p className='Comtrade_text'>{status}</p>
+      
 
 
     </div>
