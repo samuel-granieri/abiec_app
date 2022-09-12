@@ -12,7 +12,7 @@ function Comtrade() {
   
   const [data_pais, setDataPais] = useState([])
   const [data_ano, setDataAno] = useState([])
-  
+  const [status, setStatus] = useState('Carregando arquivos...')
 
 
 
@@ -39,7 +39,8 @@ function Comtrade() {
             let elm = document.createElement('a');  // CREATE A LINK ELEMENT IN DOM
             elm.href = URL.createObjectURL(bytes);  // SET LINK ELEMENTS CONTENTS
             elm.setAttribute('download', `${item_pais.pais_nome} ${item_ano.ano}.zip`); // SET ELEMENT CREATED 'ATTRIBUTE' TO DOWNLOAD, FILENAME PARAM AUTOMATICALLY
-            elm.click()               
+            elm.click()
+            setStatus('Download concluído!')
     
           })
           
@@ -76,6 +77,7 @@ function Comtrade() {
 
 
       <input className='Comtrade_button' type='button' value='Buscar' onClick={() => retrieve_data()}/>
+      <p>{status}</p>
 
 
     </div>
