@@ -40,7 +40,7 @@ function Comtrade() {
             elm.href = URL.createObjectURL(bytes);  // SET LINK ELEMENTS CONTENTS
             elm.setAttribute('download', `${item_pais.pais_nome} ${item_ano.ano}.zip`); // SET ELEMENT CREATED 'ATTRIBUTE' TO DOWNLOAD, FILENAME PARAM AUTOMATICALLY
             elm.click()
-            setStatus(`Download concluído: arqwuivo ${item_pais.pais_nome} ${item_ano.ano}.zip`)
+            setStatus(`Download concluído: arquivo ${item_pais.pais_nome} ${item_ano.ano}.zip`)
     
           })
 
