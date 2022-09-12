@@ -42,7 +42,8 @@ function Comtrade() {
             elm.click()               
     
           })
-  
+          
+      
         
   
 
@@ -61,10 +62,6 @@ function Comtrade() {
        
 
   }
-
-  
-
-  
 
 
   
