@@ -26,7 +26,7 @@ function Comtrade() {
 
           fetch(
           
-            `http://comtrade.un.org/api/get/bulk/C/A/${item_ano.ano}/${item_pais.pais_id}/HS?token=J18NDz5Xua5U3ctLpIXLowNzVpY50CVP95f49s5Tu5N0n0j1dxxwUIEOYcou9SQzaGsiG+9ZvTEAVuIm6U+2zvTeFx6h2khpx5LxstaqB0MPxDgWbMoCdFPglgjVBycWSMDljymRfXcXLSzXvkx5Tftfg8ZWxiYBuZDtSxsZ/IU=`
+            `https://comtrade.un.org/api/get/bulk/C/A/${item_ano.ano}/${item_pais.pais_id}/HS?token=J18NDz5Xua5U3ctLpIXLowNzVpY50CVP95f49s5Tu5N0n0j1dxxwUIEOYcou9SQzaGsiG+9ZvTEAVuIm6U+2zvTeFx6h2khpx5LxstaqB0MPxDgWbMoCdFPglgjVBycWSMDljymRfXcXLSzXvkx5Tftfg8ZWxiYBuZDtSxsZ/IU=`
     
           
           )
