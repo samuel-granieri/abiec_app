@@ -1,0 +1,16 @@
+.About_titulo{
+    margin: 10px 10px 10px 10px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+
+}
+
+.About_div{
+    margin: 10px 10px 10px 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: auto;
+    padding-left: 50px;
+}
